@@ -25,7 +25,7 @@ const tripsList = async (req, res) => {
 //GET: /trips/:tripCode -return a single trip
 const tripsFindCode = async (req, res) => {
     Model
-        .find({ 'Code': req.params.tripCode})
+        .find({code: req.params.tripCode})
         .exec((err, trip) => {
             if(!trip) {
                 return res
