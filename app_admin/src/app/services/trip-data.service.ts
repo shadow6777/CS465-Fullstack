@@ -33,6 +33,6 @@ export class TripDataService {
 
 private handleError(error: any) Promise<any> {
   console.error('Something has gone wrong', error); //for demo purposes only
-  return this.Promise.reject(error.message || error);
+  return Promise.reject(error.message || error);
   }
 }
