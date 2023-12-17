@@ -8,12 +8,18 @@ import { AppRoutingModule } from './app-router.module';
 import { TripListingComponent } from './trip-listing/trip-listing.component';
 import { TripCardComponent } from './trip-card/trip-card.component';
 import { TripDataService } from './services/trip-data.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TripListingComponent,
-    TripCardComponent
+    TripCardComponent,
+    NavbarComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
